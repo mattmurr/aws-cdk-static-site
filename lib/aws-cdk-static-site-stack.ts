@@ -7,7 +7,7 @@ export class AwsCdkStaticSiteStack extends cdk.Stack {
     super(scope, id, props);
 
     const bucket = new s3.Bucket(this, "Bucket", {
-      bucketName: "aws-cdk-static-site",
+      bucketName: "mattmurr-aws-cdk-static-site",
       websiteIndexDocument: "index.html",
       publicReadAccess: true,
       autoDeleteObjects: true,
